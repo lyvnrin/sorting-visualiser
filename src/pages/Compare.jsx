@@ -86,7 +86,7 @@ export default function Compare() {
           <Badge>Comparison Edition</Badge>
         </div>
 
-        <h1 style={{ ...display, fontSize: 'clamp(2.5rem, 8vw, 4rem)', fontWeight: 700, color: 'var(--primary)', lineHeight: 1, marginBottom: '0.75rem' }}>
+        <h1 style={{ ...display, fontSize: 'clamp(2.5rem, 8vw, 4rem)', fontWeight: 700, color: 'var(--text)', lineHeight: 1, marginBottom: '0.75rem' }}>
           Head-to-Head.
         </h1>
 
@@ -154,7 +154,7 @@ export default function Compare() {
           {[
             { scenario: 'General-purpose, large dataset',  winner: 'Quicksort',       reason: 'Best average-case constants, in-place, cache-friendly.' },
             { scenario: 'Need guaranteed O(n log n)',       winner: 'Merge Sort',      reason: 'Only algorithm here with no worst-case cliff.' },
-            { scenario: 'Small or nearly-sorted data',     winner: 'Insertion Sort',  reason: 'Adaptive — O(n) on almost-sorted input. Python\'s Timsort uses it.' },
+            { scenario: 'Small or nearly-sorted data',     winner: 'Insertion Sort',  reason: 'Adaptive - O(n) on almost-sorted input. Python\'s Timsort uses it.' },
             { scenario: 'Teaching / simplest code',        winner: 'Bubble Sort',     reason: 'Clearest mental model. Use for demos, not production.' },
             { scenario: 'Sorting linked lists',            winner: 'Merge Sort',      reason: 'No random access needed; merge is natural for linked structures.' },
             { scenario: 'Memory-constrained environment',  winner: 'Quicksort',       reason: 'O(log n) stack space. Merge sort\'s O(n) auxiliary is too costly.' },

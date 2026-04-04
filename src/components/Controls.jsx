@@ -47,7 +47,7 @@ export default function Controls({ state, speed, setSpeed, onStart, onReset }) {
             border: 'none',
           }}
         >
-          {isDone ? 'Done! 🎉' : isRunning ? 'Running…' : 'Go 💅'}
+          {isDone ? 'Done! 🎉' : isRunning ? 'Running…' : 'Go ▶️'}
         </button>
 
         <button

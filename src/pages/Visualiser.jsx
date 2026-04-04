@@ -25,7 +25,7 @@ export default function Visualiser() {
 
       {/* HEADER */}
       <header style={{ textAlign: 'center', marginBottom: '1.5rem' }} className="fade-up">
-        <h1 style={{ ...display, fontSize: 'clamp(2.5rem, 10vw, 4rem)', fontWeight: 700, color: 'var(--primary)', lineHeight: 1, marginBottom: '0.4rem' }}>
+        <h1 style={{ ...display, fontSize: 'clamp(2.5rem, 10vw, 4rem)', fontWeight: 700, color: 'var(--text)', lineHeight: 1, marginBottom: '0.4rem' }}>
           Sort It Out.
         </h1>
         <p style={{ ...body, fontSize: 14, color: 'hsl(330 15% 60%)' }}>

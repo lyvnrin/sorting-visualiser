@@ -248,7 +248,7 @@ export const ALGORITHMS = {
       'When average O(n²) is unacceptable.',
     ],
     examTip:
-      'Insertion sort is the algorithm of choice for nearly-sorted data. Python\'s Timsort uses it for small sub-arrays. Always mention this in exams — it shows depth.',
+      'Insertion sort is the algorithm of choice for nearly-sorted data. Python\'s Timsort uses it for small sub-arrays. Always mention this in exams, it shows depth.',
     funFact:
       'Timsort — the default sort in Python and Java — uses insertion sort for small chunks (under ~64 elements), then merge sort for the rest. You\'re using insertion sort constantly without knowing it.',
     vibeCheck:
@@ -360,29 +360,29 @@ def merge(left, right):
 }
 
 private static int[] merge(int[] l, int[] r) {
-    int[] result = new int[l.length + r.length];
-    int i = 0, j = 0, k = 0;
-    while (i < l.length && j < r.length)
-        result[k++] = (l[i] <= r[j]) ? l[i++] : r[j++];
-    while (i < l.length) result[k++] = l[i++];
-    while (j < r.length) result[k++] = r[j++];
-    return result;
+  int[] result = new int[l.length + r.length];
+  int i = 0, j = 0, k = 0;
+  while (i < l.length && j < r.length)
+      result[k++] = (l[i] <= r[j]) ? l[i++] : r[j++];
+  while (i < l.length) result[k++] = l[i++];
+  while (j < r.length) result[k++] = r[j++];
+  return result;
 }`,
-      pseudo: `MERGE-SORT(A):
-  IF length(A) <= 1: RETURN A
-  mid = floor(length(A) / 2)
-  left  = MERGE-SORT(A[0..mid-1])
-  right = MERGE-SORT(A[mid..n-1])
-  RETURN MERGE(left, right)
+  pseudo: `MERGE-SORT(A):
+    IF length(A) <= 1: RETURN A
+    mid = floor(length(A) / 2)
+    left  = MERGE-SORT(A[0..mid-1])
+    right = MERGE-SORT(A[mid..n-1])
+    RETURN MERGE(left, right)
 
-MERGE(L, R):
-  result = []
-  WHILE L and R not empty:
-    IF L[0] <= R[0]: append L[0]; remove from L
-    ELSE:            append R[0]; remove from R
-  RETURN result + remaining L + remaining R`,
+    MERGE(L, R):
+      result = []
+      WHILE L and R not empty:
+        IF L[0] <= R[0]: append L[0]; remove from L
+        ELSE:            append R[0]; remove from R
+      RETURN result + remaining L + remaining R`,
+        },
     },
-  },
 
   quick: {
     id: 'quick',
@@ -409,7 +409,7 @@ MERGE(L, R):
       'The pivot is now in its final sorted position.',
       'Recursively apply the same process to the left and right partitions.',
       'Base case: partition of size 0 or 1 is already sorted.',
-      'Pivot choice dramatically affects performance — random pivot or median-of-three improves average case.',
+      'Pivot choice dramatically affects performance - random pivot or median-of-three improves average case.',
     ],
     whenToUse: [
       'General-purpose sorting (fastest in practice for most inputs).',
@@ -425,7 +425,7 @@ MERGE(L, R):
     examTip:
       'Quicksort\'s worst case is O(n²) when the pivot is always the smallest or largest element (e.g. sorted array with last-element pivot). Randomising the pivot or using median-of-three fixes this in practice.',
     funFact:
-      'Invented by Tony Hoare in 1959 while working on machine translation for the National Physical Laboratory. He later called it "my billion-dollar mistake" — but that was for null references. Quicksort he\'s quite proud of.',
+      'Invented by Tony Hoare in 1959 while working on machine translation for the National Physical Laboratory. He later called it "my billion-dollar mistake". But that was for null references. Quicksort he\'s quite proud of.',
     vibeCheck:
       'The genius who never studies but somehow gets top marks. 90% of the time. The other 10% is a cautionary tale.',
     code: {
