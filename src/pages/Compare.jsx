@@ -56,9 +56,9 @@ const CHEAT_QA = [
   { q: 'Fastest in practice (average case)?', a: 'Quicksort - lower constants, excellent cache performance.' },
   { q: 'Best for small or nearly-sorted data?', a: 'Insertion Sort - adaptive, O(n) on nearly-sorted input.' },
   { q: 'Which are stable?', a: 'Bubble, Insertion, Merge. Quicksort is NOT stable.' },
-  { q: 'Which needs extra memory?', a: 'Merge Sort — O(n) space. The rest are O(1) or O(log n).' },
+  { q: 'Which needs extra memory?', a: 'Merge Sort - O(n) space. The rest are O(1) or O(log n).' },
   { q: 'Which does Python\'s Timsort use?', a: 'Merge Sort + Insertion Sort (hybrid).' },
-  { q: 'Worst case for Quicksort?', a: 'O(n²) — pivot always lands at min or max element.' },
+  { q: 'Worst case for Quicksort?', a: 'O(n²) - pivot always lands at min or max element.' },
   { q: 'How to fix Quicksort\'s worst case?', a: 'Randomise the pivot, or use median-of-three selection.' },
 ]
 
