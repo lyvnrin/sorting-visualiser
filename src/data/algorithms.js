@@ -144,7 +144,7 @@ export const ALGORITHMS = {
     accentColor: 'hsl(330, 72%, 92%)',
     gen: bubbleSortGen,
     analogy:
-      'Think of it like sorting a hand of cards by swapping neighbours over and over until the deck calms down — dramatic, inefficient, but weirdly satisfying.',
+      'Think of it like sorting a hand of cards by swapping neighbours over and over until the deck calms down - dramatic, inefficient, but weirdly satisfying.',
     howItWorks: [
       'Start at the beginning of the array.',
       'Compare each pair of adjacent elements.',
@@ -238,7 +238,7 @@ export const ALGORITHMS = {
     ],
     whenToUse: [
       'Small datasets (practical for n ≤ 20–30).',
-      'Nearly sorted data — O(n) in best case.',
+      'Nearly sorted data, O(n) in best case.',
       'Online sorting (receiving data one element at a time).',
       'As the base case in hybrid algorithms like Timsort.',
     ],
@@ -318,7 +318,7 @@ export const ALGORITHMS = {
     whenToUse: [
       'When guaranteed O(n log n) performance is needed.',
       'Sorting linked lists (merge sort shines here).',
-      'External sorting (data too large for RAM — sort in chunks).',
+      'External sorting (data too large for RAM - sort in chunks).',
       'When stability is required and data is large.',
     ],
     whenToAvoid: [
